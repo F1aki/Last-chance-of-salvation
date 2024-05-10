@@ -28,7 +28,7 @@ public class Pause : MonoBehaviour
                 PauseGame();
             }
         }
-
+        
         UpdateTimers();
     }
 
