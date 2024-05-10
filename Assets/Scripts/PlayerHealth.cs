@@ -26,12 +26,12 @@ public class PlayerHealth : MonoBehaviour
         }
         DrawHealthBar();
     }
-    public void AddHealth(float amount)
-    {
-        value += amount;
-        value = Mathf.Clamp(value, 0, _maxValue);
-        DrawHealthBar();
-    }
+    //public void AddHealth(float amount)
+    //{
+        //value += amount;
+        //value = Mathf.Clamp(value, 0, _maxValue);
+        //DrawHealthBar();
+    //}
     private void PlayerIsDead()
     {
         gameplayUI.SetActive(false);
