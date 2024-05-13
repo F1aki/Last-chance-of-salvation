@@ -9,7 +9,6 @@ public class Pause : MonoBehaviour
     [SerializeField] TextMeshProUGUI _unscaledTimer;
 
     [SerializeField] GameObject _pausePanel;
-    
 
     bool _isPaused = false;
 
@@ -18,19 +17,15 @@ public class Pause : MonoBehaviour
 
     private void Update()
     {
-        if (Input.GetKeyUp(KeyCode.Escape))
+        if (Input.GetKeyDown(KeyCode.Escape))
         {
-            
             if (_isPaused)
             {
                 ResumeGame();
-                
             }
             else
             {
                 PauseGame();
-                
-                Cursor.lockState = CursorLockMode.None;
             }
         }
         
@@ -45,7 +40,6 @@ public class Pause : MonoBehaviour
 
         _scaledTimer.text = "Scaled Time: " + _scaledTime.ToString("F2");
         _unscaledTimer.text = "Unscaled Time: " + _unscaledTime.ToString("F2");
-        
     }
 
     public void PauseGame()
@@ -60,8 +54,6 @@ public class Pause : MonoBehaviour
         _pausePanel.SetActive(false);
         Time.timeScale = 1;
         _isPaused = false;
-        Cursor.lockState = CursorLockMode.Locked;
-        Cursor.visible = false;
     }
 
     public void MainMenuButton()

@@ -28,9 +28,9 @@ public class PlayerHealth : MonoBehaviour
     }
     public void AddHealth(float amount)
     {
-        value += amount;
-        value = Mathf.Clamp(value, 0, _maxValue);
-        DrawHealthBar();
+        //value += amount;
+        //value = Mathf.Clamp(value, 0, _maxValue);
+        //DrawHealthBar();
     }
     private void PlayerIsDead()
     {
@@ -41,6 +41,6 @@ public class PlayerHealth : MonoBehaviour
     }
     private void DrawHealthBar()
     {
-        valueRectTransform.anchorMax = new Vector2(value / _maxValue, 0.5f);
+        valueRectTransform.anchorMax = new Vector2(value / _maxValue, 1);
     }
 }
