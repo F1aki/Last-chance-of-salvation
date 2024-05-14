@@ -21,11 +21,13 @@ public class Pause : MonoBehaviour
         {
             if (_isPaused)
             {
-                ResumeGame();
+                ResumeGame();    
             }
             else
             {
                 PauseGame();
+                Cursor.lockState = CursorLockMode.None;
+                Cursor.visible = true;
             }
         }
         
@@ -54,6 +56,8 @@ public class Pause : MonoBehaviour
         _pausePanel.SetActive(false);
         Time.timeScale = 1;
         _isPaused = false;
+        Cursor.lockState = CursorLockMode.Locked;
+        Cursor.visible = false;
     }
 
     public void MainMenuButton()

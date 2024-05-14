@@ -41,6 +41,6 @@ public class PlayerHealth : MonoBehaviour
     }
     private void DrawHealthBar()
     {
-        valueRectTransform.anchorMax = new Vector2(value / _maxValue, 1);
+        valueRectTransform.anchorMax = new Vector2(value / _maxValue, 0.5f);
     }
 }
