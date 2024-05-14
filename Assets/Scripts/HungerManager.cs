@@ -42,7 +42,7 @@ public class HungerManager : MonoBehaviour
             hungerValue -= _pl.speed;
             _pl.speed = normspeed;
         }
-        else if (hungerValue < 0)
+        else if (hungerValue <= 0)
         {
             hungerValue = 0;
             _ph.DealDamage(10);
