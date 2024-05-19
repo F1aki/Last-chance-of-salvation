@@ -4,10 +4,11 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
+    public GameObject Door0;
     public float gravity = 9.8f;
     public float jumpForce;
     public float speed;
-
+    public bool hasKey = false;
     public Animator animator;
 
     private float _fallVelocity = 0;
@@ -79,4 +80,20 @@ public class PlayerController : MonoBehaviour
           _fallVelocity = 0;
       }
     }
+    private void OnTriggerStay(Collider other)
+    {
+        if(other.tag == "key")
+        {
+            Destroy(other.gameObject);
+            hasKey = true;
+        }
+    }
+    private void OnCollisionStay(Collision other)
+    {
+        if(other.gameObject.name == "Door0" && hasKey == true)
+        {
+            Destroy(other.gameObject);
+        }
+    }
+
 }
