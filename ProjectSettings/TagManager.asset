@@ -6,6 +6,8 @@ TagManager:
   tags:
   - key
   - Door0
+  - 123
+  - Chicken
   layers:
   - Default
   - TransparentFX

@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
-    public GameObject Door0;
+    
     public float gravity = 9.8f;
     public float jumpForce;
     public float speed;
@@ -87,12 +87,30 @@ public class PlayerController : MonoBehaviour
             Destroy(other.gameObject);
             hasKey = true;
         }
+        if (other.tag == "Chicken")
+        {
+            if (GetComponent<HungerManager>().hungerValue >= 70)
+            {
+                GetComponent<HungerManager>().hungerValue = 100;
+            }
+            else
+            {
+                GetComponent<HungerManager>().hungerValue += 30;                
+            }
+            Destroy(other.gameObject);
+        }
+
+
+
+
+
     }
     private void OnCollisionStay(Collision other)
     {
-        if(other.gameObject.name == "Door0" && hasKey == true)
+        if(other.gameObject.tag == "123" && hasKey == true)
         {
             Destroy(other.gameObject);
+            hasKey = false;
         }
     }
 

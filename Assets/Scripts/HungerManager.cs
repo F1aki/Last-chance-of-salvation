@@ -51,5 +51,10 @@ public class HungerManager : MonoBehaviour
 
         DrawHunBar();
     }
+    public void Update()
+    {
+        
+    }
+
 
 }
