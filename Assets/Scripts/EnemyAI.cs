@@ -51,14 +51,15 @@ public class EnemyAI : MonoBehaviour
     {
         var diraction = player.transform.position - transform.position;
         _isPlayerNoticed = false;
-        if (Vector3.Angle(Vector3.forward, diraction) < viewAngle)
+        if (Vector3.Angle(transform.forward, diraction) < viewAngle)
         {
+            
             RaycastHit hit;
             if (Physics.Raycast(transform.position + Vector3.up, diraction, out hit))
             {
-                if (hit.collider.gameObject == player.gameObject)
+                if (hit.collider.GetComponent<PlayerController>() != null)
                 {
-                     _isPlayerNoticed = true;
+                    _isPlayerNoticed = true;
                 }
             }   
         }
