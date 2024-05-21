@@ -8,7 +8,9 @@ public class PlayerController : MonoBehaviour
     public float gravity = 9.8f;
     public float jumpForce;
     public float speed;
-    public bool hasKey = false;
+    public bool hasKey1 = false;
+    public bool hasKey2 = false;
+    public bool hasKey3 = false;
     public Animator animator;
 
     private float _fallVelocity = 0;
@@ -82,10 +84,20 @@ public class PlayerController : MonoBehaviour
     }
     private void OnTriggerStay(Collider other)
     {
-        if(other.tag == "key")
+        if(other.name == "key 2 to 5")
         {
             Destroy(other.gameObject);
-            hasKey = true;
+            hasKey1 = true;
+        }
+        else if (other.name == "key 5 to 4")
+        {
+            Destroy(other.gameObject);
+            hasKey2 = true;
+        }
+        else if (other.name == "key 1 to 2")
+        {
+            Destroy(other.gameObject);
+            hasKey3 = true;
         }
         if (other.tag == "Chicken")
         {
@@ -98,6 +110,7 @@ public class PlayerController : MonoBehaviour
                 GetComponent<HungerManager>().hungerValue += 30;                
             }
             Destroy(other.gameObject);
+            this.GetComponent<HungerManager>().DrawHunBar();
         }
 
 
@@ -105,13 +118,6 @@ public class PlayerController : MonoBehaviour
 
 
     }
-    private void OnCollisionStay(Collision other)
-    {
-        if(other.gameObject.tag == "123" && hasKey == true)
-        {
-            Destroy(other.gameObject);
-            hasKey = false;
-        }
-    }
+    
 
 }

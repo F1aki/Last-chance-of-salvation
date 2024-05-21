@@ -8,6 +8,12 @@ TagManager:
   - Door0
   - 123
   - Chicken
+  - Door
+  - D1
+  - D2
+  - D3
+  - D4
+  - D5
   layers:
   - Default
   - TransparentFX
