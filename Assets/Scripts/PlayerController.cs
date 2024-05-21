@@ -11,6 +11,7 @@ public class PlayerController : MonoBehaviour
     public bool hasKey1 = false;
     public bool hasKey2 = false;
     public bool hasKey3 = false;
+    public bool hasKey4 = false;
     public Animator animator;
 
     private float _fallVelocity = 0;
@@ -98,6 +99,11 @@ public class PlayerController : MonoBehaviour
         {
             Destroy(other.gameObject);
             hasKey3 = true;
+        }
+        else if (other.name == "keyOp")
+        {
+            Destroy(other.gameObject);
+            hasKey4 = true;
         }
         if (other.tag == "Chicken")
         {
