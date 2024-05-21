@@ -30,7 +30,7 @@ public class HungerManager : MonoBehaviour
             Invoke("Hunger", t);
         }
     }
-    private void DrawHunBar()
+    public void DrawHunBar()
     {
         HunRectTransform.anchorMax = new Vector2(hungerValue / _maxHunValue, 0.5f);
     }
@@ -51,5 +51,10 @@ public class HungerManager : MonoBehaviour
 
         DrawHunBar();
     }
+    public void Update()
+    {
+        
+    }
+
 
 }

@@ -3,7 +3,17 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - key
+  - Door0
+  - 123
+  - Chicken
+  - Door
+  - D1
+  - D2
+  - D3
+  - D4
+  - D5
   layers:
   - Default
   - TransparentFX
