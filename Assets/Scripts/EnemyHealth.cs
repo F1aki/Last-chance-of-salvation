@@ -5,7 +5,7 @@ using UnityEngine;
 public class EnemyHealth : MonoBehaviour
 {
     public float value = 100;
-
+    public Animator animator;
     public bool IsAlive()
     {
         return value > 0;
@@ -15,7 +15,7 @@ public class EnemyHealth : MonoBehaviour
         value -= damage;
         if (value <= 0)
         {
-            Destroy(gameObject);
+            animator.SetTrigger("Death");
         }
     }
 }
