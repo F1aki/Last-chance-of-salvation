@@ -55,7 +55,7 @@ public class EnemyAI : MonoBehaviour
         {
             
             RaycastHit hit;
-            if (Physics.Raycast(transform.position + Vector3.up, diraction, out hit))
+            if (Physics.Raycast(transform.position, diraction, out hit))
             {
                 if (hit.collider.GetComponent<PlayerController>() != null)
                 {
