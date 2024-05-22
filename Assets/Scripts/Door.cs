@@ -23,6 +23,7 @@ public class Door : MonoBehaviour
         {
             Destroy(other.gameObject);
         }
+<<<<<<< Updated upstream
         else if (other.gameObject.tag == "D6" && pl.hasKey4)
         {
             DA6.animationdoor6 = true;
@@ -30,5 +31,11 @@ public class Door : MonoBehaviour
             Debug.Log(I);
         }
 
+=======
+        else if (other.gameObject.tag == "D1" && pl.hasKey4)
+        {
+            Destroy(other.gameObject);
+        }
+>>>>>>> Stashed changes
     }
 }   

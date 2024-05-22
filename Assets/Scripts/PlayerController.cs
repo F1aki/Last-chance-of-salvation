@@ -100,10 +100,17 @@ public class PlayerController : MonoBehaviour
             Destroy(other.gameObject);
             hasKey3 = true;
         }
+<<<<<<< Updated upstream
         else if (other.name == "keyOp")
         {
             Destroy(other.gameObject);
             hasKey4 = true;
+=======
+        else if (other.name == "key 4 to R")
+        {
+            Destroy(other.gameObject);
+            hasKey3 = true;
+>>>>>>> Stashed changes
         }
         if (other.tag == "Chicken")
         {
