@@ -14,11 +14,11 @@ public class DA6 : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
+    public void Door6()
     {
         if (animationdoor6 == true)
         {
-            animator.SetTrigger("D6");
+            animator.SetBool("D6",true);
         }
     }
 }

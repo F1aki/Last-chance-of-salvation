@@ -2,9 +2,9 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class DoorAnimation5 : MonoBehaviour
+public class DoorAnimation2 : MonoBehaviour
 {
-    public bool animationdoor5 = false;
+    public bool animationdoor2 = false;
     public Animator animator;
 
     // Start is called before the first frame update
@@ -14,11 +14,11 @@ public class DoorAnimation5 : MonoBehaviour
     }
 
     // Update is called once per frame
-    public void Door5()
+    public void Door2()
     {
-        if (animationdoor5 == true)
+        if (animationdoor2 == true)
         {
-            animator.SetBool("D5",true);
+            animator.SetBool("D2", true);
         }
     }
 }
