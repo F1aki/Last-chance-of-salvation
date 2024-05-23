@@ -8,7 +8,7 @@ public class PlayerHealth : MonoBehaviour
     public RectTransform valueRectTransform;
     public GameObject gameplayUI;
     public GameObject gameOverScreen;
-
+    public Animator animator;
     private float _maxValue;
 
     private void Start()
@@ -34,10 +34,12 @@ public class PlayerHealth : MonoBehaviour
     }
     private void PlayerIsDead()
     {
+        animator.SetTrigger("Death");
         gameplayUI.SetActive(false);
         gameOverScreen.SetActive(true);
         GetComponent<PlayerController>().enabled = false;
         GetComponent<CameraRotation>().enabled = false;
+        
     }
     private void DrawHealthBar()
     {

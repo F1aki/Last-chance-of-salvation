@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.AI;
 
 public class EnemyHealth : MonoBehaviour
 {
@@ -15,7 +16,21 @@ public class EnemyHealth : MonoBehaviour
         value -= damage;
         if (value <= 0)
         {
-            animator.SetTrigger("Death");
+
+            EnemyDeath();
+            ///Destroy(gameObject);
         }
+        else
+        {
+            animator.SetTrigger("hit");
+        }
+    }
+
+    private void EnemyDeath()
+    {
+        animator.SetTrigger("Death");
+        GetComponent<EnemyAI>().enabled = false;
+        GetComponent<NavMeshAgent>().enabled = false;
+        GetComponent<CapsuleCollider>().enabled = false;
     }
 }
