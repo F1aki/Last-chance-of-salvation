@@ -10,6 +10,7 @@ public class PlayerHealth : MonoBehaviour
     public GameObject gameOverScreen;
     public Animator animator;
     private float _maxValue;
+    public AudioSource Sound;
 
     private void Start()
     {
@@ -39,6 +40,7 @@ public class PlayerHealth : MonoBehaviour
         gameOverScreen.SetActive(true);
         GetComponent<PlayerController>().enabled = false;
         GetComponent<CameraRotation>().enabled = false;
+        Sound.Play();
         
     }
     private void DrawHealthBar()

@@ -10,6 +10,8 @@ public class ReloadOnESC : MonoBehaviour
         if(Input.GetKeyDown(KeyCode.Escape))
         {
             SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+            GetComponent<PlayerController>().enabled = true;
+            GetComponent<CameraRotation>().enabled = true;
         }
     }
 }

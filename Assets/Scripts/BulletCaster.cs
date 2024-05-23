@@ -8,6 +8,7 @@ public class BulletCaster : MonoBehaviour
     public Transform bulletSourceTransform;
     public Animator animator;
     public float damage = 10;
+    public AudioSource Sound;
 
     private void Update()
     {
@@ -16,6 +17,7 @@ public class BulletCaster : MonoBehaviour
             var bullet = Instantiate(bulletPrefab, bulletSourceTransform.position, bulletSourceTransform.rotation);
             bullet.damage = damage;
             animator.SetTrigger("Shoot");
+            Sound.Play();
         }
     }
 }

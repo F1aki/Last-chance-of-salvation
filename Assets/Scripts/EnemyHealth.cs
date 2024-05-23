@@ -7,6 +7,8 @@ public class EnemyHealth : MonoBehaviour
 {
     public float value = 100;
     public Animator animator;
+    public AudioSource Sound;
+    public AudioSource Sound1;
     public bool IsAlive()
     {
         return value > 0;
@@ -23,12 +25,14 @@ public class EnemyHealth : MonoBehaviour
         else
         {
             animator.SetTrigger("hit");
+            Sound1.Play();
         }
     }
 
     private void EnemyDeath()
     {
         animator.SetTrigger("Death");
+        Sound.Play();
         GetComponent<EnemyAI>().enabled = false;
         GetComponent<NavMeshAgent>().enabled = false;
         GetComponent<CapsuleCollider>().enabled = false;

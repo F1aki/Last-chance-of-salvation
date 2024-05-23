@@ -15,6 +15,7 @@ public class EnemyAI : MonoBehaviour
     private PlayerHealth _playerHealth;
     private EnemyHealth _enemyHealth;
     public float attackDistance = 1.5F;
+    public AudioSource Sound2;
     public bool IsAlive()
     {
         return _enemyHealth.IsAlive();
@@ -43,7 +44,7 @@ public class EnemyAI : MonoBehaviour
         {
             if(_navMeshAgent.remainingDistance <= _navMeshAgent.stoppingDistance)
             {
-                animator.SetTrigger("Attack");              
+                animator.SetTrigger("Attack");
             }
         }
     }
@@ -63,7 +64,7 @@ public class EnemyAI : MonoBehaviour
                 {
                     _isPlayerNoticed = true;
                 }
-            }   
+            }
         }
     }
     private void PatrolUpdate()
@@ -97,6 +98,7 @@ public class EnemyAI : MonoBehaviour
         if (_navMeshAgent.remainingDistance > (_navMeshAgent.stoppingDistance + attackDistance)) return;
         
         _playerHealth.DealDamage(damage);
+        Sound2.Play();
     }
 
 
