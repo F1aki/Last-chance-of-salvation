@@ -13,30 +13,29 @@ public class Door : MonoBehaviour
     public DoorAnimation5 door5;
     public DoorAnimation2 door2;
     public DA7 DA7;
-    private int I = 0;
     private void OnTriggerEnter(Collider other)
     {
-        if (other.gameObject.tag == "D5" && pl.hasKey1)
+        if (other.gameObject.tag == "D5" && pl.hasKey1 == true)
         {
             DoorAni5.animationdoor5 = true;
             door5.Door5(); 
         }
-        else if (other.gameObject.tag == "D4" && pl.hasKey2)
+        else if (other.gameObject.tag == "D4" && pl.hasKey2 == true)
         {
             DoorAni.animationdoor = true;
             door.Door4();
         }
-        else if (other.gameObject.tag == "D2" && pl.hasKey3)
+        else if (other.gameObject.tag == "D2" && pl.hasKey3 == true)
         {
             door2.animationdoor2 = true;
             door2.Door2();
         }
-        else if (other.gameObject.tag == "D6" && pl.hasKey4)
+        else if (other.gameObject.tag == "D6" && pl.hasKey4 == true)
         {
             DA6.animationdoor6 = true;
             DA6.Door6();
         }
-        else if (other.gameObject.tag == "D7")
+        else if (other.gameObject.tag == "D7" && pl.hasKey5 == true)
         {
             DA7.animationdoor7 = true;
             DA7.Door7();

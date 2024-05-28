@@ -18,7 +18,7 @@ public class DoorAnimation2 : MonoBehaviour
     {
         if (animationdoor2 == true)
         {
-            animator.SetBool("D2", true);
+            animator.SetTrigger("D2");
         }
     }
 }

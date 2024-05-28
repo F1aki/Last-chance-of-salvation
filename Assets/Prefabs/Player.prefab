@@ -399,8 +399,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.5}
   m_AnchorMax: {x: 1, y: 0.5}
-  m_AnchoredPosition: {x: 0.000030517578, y: 0.0000038146973}
-  m_SizeDelta: {x: 0.018798828, y: 31.999998}
+  m_AnchoredPosition: {x: 0.000030517578, y: -0.27998924}
+  m_SizeDelta: {x: 0.018798828, y: 40.922478}
   m_Pivot: {x: 1, y: 0.5}
 --- !u!222 &1976993222985227429
 CanvasRenderer:
@@ -1231,7 +1231,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: -0.7279358, z: 23.161423, w: -1.9436951}
+  m_margin: {x: 0, y: -0.7279358, z: -0.97443384, w: -1.9436951}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -1636,6 +1636,7 @@ MonoBehaviour:
   hasKey2: 0
   hasKey3: 0
   hasKey4: 0
+  hasKey5: 0
   animator: {fileID: 7043610037581598901}
 --- !u!143 &7043610038043181073
 CharacterController:
@@ -1673,6 +1674,7 @@ MonoBehaviour:
   gameOverScreen: {fileID: 2928744011753356180}
   animator: {fileID: 7043610037581598901}
   Sound: {fileID: 7052709830732253984}
+  Soldier_demo55: {fileID: 0}
 --- !u!114 &6296702257000233350
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2336,8 +2338,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: -0.008}
   m_AnchorMin: {x: 0, y: 0.467}
   m_AnchorMax: {x: 1, y: 0.467}
-  m_AnchoredPosition: {x: 0.000030517578, y: 0.98841095}
-  m_SizeDelta: {x: 0.35238647, y: 30}
+  m_AnchoredPosition: {x: 0.000030517578, y: 1.2977}
+  m_SizeDelta: {x: 0.35238647, y: 40.012207}
   m_Pivot: {x: 1, y: 0.5}
 --- !u!222 &3036658237229858708
 CanvasRenderer:

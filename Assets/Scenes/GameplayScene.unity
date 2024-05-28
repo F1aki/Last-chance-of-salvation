@@ -5152,7 +5152,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 100060, guid: fcb334eb247ae3e488abb081c847cf09, type: 3}
       propertyPath: m_Name
-      value: Soldier_demo
+      value: Soldier_demo55
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: fcb334eb247ae3e488abb081c847cf09, type: 3}
       propertyPath: m_LocalPosition.x
@@ -26763,7 +26763,7 @@ BoxCollider:
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1.2212027, y: 4.6494794, z: 2.9980023}
-  m_Center: {x: 0.110601366, y: 1.824739, z: -0.9990015}
+  m_Center: {x: -0.02, y: 1.824739, z: -0.9990015}
 --- !u!114 &1014973681
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -39565,7 +39565,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8899d20f25811714f9c1a643a55385a4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  value: 350
+  value: 180
   animator: {fileID: 1517050825}
   Sound: {fileID: 676706470}
   Sound1: {fileID: 774818132}
@@ -53835,10 +53835,20 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.x
       value: -0.99993896
       objectReference: {fileID: 0}
+    - target: {fileID: 3678926305094002126, guid: efba9076e84b5c34499bafb5353dcc02,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -0.19999981
+      objectReference: {fileID: 0}
     - target: {fileID: 3826751841455447988, guid: efba9076e84b5c34499bafb5353dcc02,
         type: 3}
       propertyPath: m_AnchoredPosition.x
       value: -1.0002747
+      objectReference: {fileID: 0}
+    - target: {fileID: 3826751841455447988, guid: efba9076e84b5c34499bafb5353dcc02,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0.44000244
       objectReference: {fileID: 0}
     - target: {fileID: 5254498437782512236, guid: efba9076e84b5c34499bafb5353dcc02,
         type: 3}
@@ -54623,7 +54633,7 @@ PrefabInstance:
     - target: {fileID: 7043610037590958857, guid: efba9076e84b5c34499bafb5353dcc02,
         type: 3}
       propertyPath: m_Name
-      value: Soldier_demo55
+      value: Soldier_demo
       objectReference: {fileID: 0}
     - target: {fileID: 7043610038043181072, guid: efba9076e84b5c34499bafb5353dcc02,
         type: 3}
@@ -54643,22 +54653,22 @@ PrefabInstance:
     - target: {fileID: 7043610038043181072, guid: efba9076e84b5c34499bafb5353dcc02,
         type: 3}
       propertyPath: hasKey1
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7043610038043181072, guid: efba9076e84b5c34499bafb5353dcc02,
         type: 3}
       propertyPath: hasKey2
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7043610038043181072, guid: efba9076e84b5c34499bafb5353dcc02,
         type: 3}
       propertyPath: hasKey3
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7043610038043181072, guid: efba9076e84b5c34499bafb5353dcc02,
         type: 3}
       propertyPath: hasKey4
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7043610038043181072, guid: efba9076e84b5c34499bafb5353dcc02,
         type: 3}
@@ -57070,7 +57080,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8899d20f25811714f9c1a643a55385a4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  value: 500
+  value: 300
   animator: {fileID: 2125924262}
   Sound: {fileID: 376077664}
   Sound1: {fileID: 1841123016}

@@ -18,7 +18,7 @@ public class DA6 : MonoBehaviour
     {
         if (animationdoor6 == true)
         {
-            animator.SetBool("D6",true);
+            animator.SetTrigger("DA6");
         }
     }
 }

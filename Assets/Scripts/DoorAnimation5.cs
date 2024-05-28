@@ -18,7 +18,7 @@ public class DoorAnimation5 : MonoBehaviour
     {
         if (animationdoor5 == true)
         {
-            animator.SetBool("D5",true);
+            animator.SetTrigger("D5");
         }
     }
 }
