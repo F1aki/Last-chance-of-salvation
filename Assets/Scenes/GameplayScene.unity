@@ -53973,6 +53973,11 @@ PrefabInstance:
       propertyPath: cameraLink
       value: 
       objectReference: {fileID: 0}
+    - target: {fileID: 6111069472833358786, guid: efba9076e84b5c34499bafb5353dcc02,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -0.27999115
+      objectReference: {fileID: 0}
     - target: {fileID: 7043610036859749486, guid: efba9076e84b5c34499bafb5353dcc02,
         type: 3}
       propertyPath: m_Layer
