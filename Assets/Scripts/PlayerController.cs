@@ -12,6 +12,7 @@ public class PlayerController : MonoBehaviour
     public bool hasKey2 = false;
     public bool hasKey3 = false;
     public bool hasKey4 = false;
+    public bool hasKey5 = false;
     public Animator animator;
 
     private float _fallVelocity = 0;

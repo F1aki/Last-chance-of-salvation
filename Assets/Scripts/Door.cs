@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class Door : MonoBehaviour
 {
+    private const bool V = true;
     public DA6 DA6;
     public DoorAnimation5 DoorAni5;
     public DoorAnimation DoorAni;
@@ -11,6 +12,7 @@ public class Door : MonoBehaviour
     public DoorAnimation door;
     public DoorAnimation5 door5;
     public DoorAnimation2 door2;
+    public DA7 DA7;
     private int I = 0;
     private void OnTriggerEnter(Collider other)
     {
@@ -33,9 +35,11 @@ public class Door : MonoBehaviour
         {
             DA6.animationdoor6 = true;
             DA6.Door6();
-            
-            Debug.Log(I);
         }
-
+        else if (other.gameObject.tag == "D7")
+        {
+            DA7.animationdoor7 = true;
+            DA7.Door7();
+        }
     }
 }   

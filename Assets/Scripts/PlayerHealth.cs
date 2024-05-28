@@ -11,7 +11,7 @@ public class PlayerHealth : MonoBehaviour
     public Animator animator;
     private float _maxValue;
     public AudioSource Sound;
-
+    public GameObject Soldier_demo55;
     private void Start()
     {
         _maxValue = value;
@@ -46,5 +46,13 @@ public class PlayerHealth : MonoBehaviour
     private void DrawHealthBar()
     {
         valueRectTransform.anchorMax = new Vector2(value / _maxValue, 0.5f);
+    }
+    public void END()
+    {
+        GetComponent<PlayerController>().enabled = false;
+        GetComponent<CameraRotation>().enabled = false;
+        value = 10000000000;
+        Destroy(Soldier_demo55);
+        GetComponent<PlayerHealth>().enabled = false;
     }
 }
