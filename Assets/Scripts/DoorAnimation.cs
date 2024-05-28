@@ -17,9 +17,9 @@ public class DoorAnimation : MonoBehaviour
     // Update is called once per frame
     public void Door4()
     {
-        if(gameObject.tag == "D4" && animationdoor == true)
+        if(animationdoor == true)
         {
-            animator.SetBool("D4",true);
+            animator.SetTrigger("D4");
         }
     }
 }
