@@ -54746,27 +54746,27 @@ PrefabInstance:
     - target: {fileID: 7043610038043181072, guid: efba9076e84b5c34499bafb5353dcc02,
         type: 3}
       propertyPath: hasKey1
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7043610038043181072, guid: efba9076e84b5c34499bafb5353dcc02,
         type: 3}
       propertyPath: hasKey2
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7043610038043181072, guid: efba9076e84b5c34499bafb5353dcc02,
         type: 3}
       propertyPath: hasKey3
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7043610038043181072, guid: efba9076e84b5c34499bafb5353dcc02,
         type: 3}
       propertyPath: hasKey4
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7043610038043181072, guid: efba9076e84b5c34499bafb5353dcc02,
         type: 3}
       propertyPath: hasKey5
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7043610038043181073, guid: efba9076e84b5c34499bafb5353dcc02,
         type: 3}
